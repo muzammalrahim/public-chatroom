@@ -37,7 +37,7 @@ app.get('/about',function(req,res){
   res.send("I was a PHP/Joomla developer")
 })
 
-app.get('/contact',function(req,res){
+app.get('/contact-us',function(req,res){
   res.send("House 5, street 21, G13/3, Islamabad")
 })
 
