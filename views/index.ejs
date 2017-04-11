@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY CRUD App</title>
+</head>
+<body>
+  <h1>Public Chat Room</h1>
+  <p>Enter your name and</p>
+  <p>Your message, and be the part of this public chat room</p>
+
+  <form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name"><br />
+    <textarea rows="4" cols="50" placeholder="message" name="quote"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <ul class="quotes">
+  <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+      <span><b><%= quotes[i].name %></b></span>: <span><%= quotes[i].quote %></span>
+    </li>
+  <% } %>
+  </ul>
+</body>
+</html>
